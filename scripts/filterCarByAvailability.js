@@ -3,10 +3,12 @@ function filterCarByAvailability(cars) {
   console.log(cars);
 
   // Tempat penampungan hasil
-  const result = [];
+  let result = [];
 
   // Tulis code-mu disini
-
+  cars.forEach((e) => {
+    if(e.available==true) result.push(e)
+  })
   // Rubah code ini dengan array hasil filter berdasarkan availablity
   return result;
 }
